@@ -17,6 +17,8 @@ class ViewController: UIViewController {
         self.present(next,animated: true, completion: nil)
         
     }
+    
+    // vv
     @IBAction func goNextBySegue(_ sender:UIButton) {
         performSegue(withIdentifier: "nextSegue", sender: nil)
     }
