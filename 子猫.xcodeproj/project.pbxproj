@@ -14,6 +14,7 @@
 		AA54160B1DED9DC000ABE698 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA5416091DED9DC000ABE698 /* LaunchScreen.storyboard */; };
 		AA5416161DED9DC000ABE698 /* __Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5416151DED9DC000ABE698 /* __Tests.swift */; };
 		AA5416211DED9DC000ABE698 /* __UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5416201DED9DC000ABE698 /* __UITests.swift */; };
+		AAD125121E2E396F007C6BD9 /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD125111E2E396F007C6BD9 /* NextViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		AA54161C1DED9DC000ABE698 /* 子猫UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "子猫UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA5416201DED9DC000ABE698 /* __UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = __UITests.swift; sourceTree = "<group>"; };
 		AA5416221DED9DC000ABE698 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAD125111E2E396F007C6BD9 /* NextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				AA5416001DED9DC000ABE698 /* AppDelegate.swift */,
 				AA5416021DED9DC000ABE698 /* ViewController.swift */,
 				AA5416041DED9DC000ABE698 /* Main.storyboard */,
+				AAD125111E2E396F007C6BD9 /* NextViewController.swift */,
 				AA5416071DED9DC000ABE698 /* Assets.xcassets */,
 				AA5416091DED9DC000ABE698 /* LaunchScreen.storyboard */,
 				AA54160C1DED9DC000ABE698 /* Info.plist */,
@@ -263,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA5416031DED9DC000ABE698 /* ViewController.swift in Sources */,
+				AAD125121E2E396F007C6BD9 /* NextViewController.swift in Sources */,
 				AA5416011DED9DC000ABE698 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

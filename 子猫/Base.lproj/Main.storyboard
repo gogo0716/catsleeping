@@ -50,43 +50,17 @@
                     </view>
                     <connections>
                         <outlet property="label" destination="RUB-Wl-9b3" id="S1t-RZ-2rW"/>
-                        <segue destination="Bvp-5B-LUD" kind="modal" id="J7S-Gl-beO"/>
+                        <segue destination="N97-um-ErR" kind="modal" identifier="nextView" id="KJm-cu-Jhy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="18.5" y="343.5"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="Ce8-h4-JW5">
-            <objects>
-                <viewController id="Bvp-5B-LUD" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="V49-l0-MI7"/>
-                        <viewControllerLayoutGuide type="bottom" id="ar8-7D-M73"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="L5s-LC-KpO">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yd8-cG-SOh">
-                                <rect key="frame" x="137" y="500" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="rYE-uO-wxR"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="SFG-Vp-vDq" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="457" y="344"/>
-        </scene>
-        <!--View Controller-->
+        <!--Next View Controller-->
         <scene sceneID="WzI-pt-Fbs">
             <objects>
-                <viewController id="N97-um-ErR" sceneMemberID="viewController">
+                <viewController id="N97-um-ErR" customClass="NextViewController" customModule="子猫" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fuJ-1P-mal"/>
                         <viewControllerLayoutGuide type="bottom" id="Leh-NQ-TNy"/>
@@ -99,7 +73,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zwm-yj-1pJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="738" y="342"/>
+            <point key="canvasLocation" x="470" y="344"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

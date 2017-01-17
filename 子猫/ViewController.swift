@@ -10,18 +10,13 @@ import UIKit
 
 class ViewController: UIViewController {
     @IBOutlet var label: UILabel!
-    @IBAction func goBack(_ segue:UIStoryboardSegue) {}
     
+    // 画面遷移
     @IBAction func goNext(_ sender:UIButton) {
-        let next = storyboard!.instantiateViewController(withIdentifier: "nextView")
-        self.present(next,animated: true, completion: nil)
+        performSegue(withIdentifier: "nextView", sender: nil)
         
     }
     
-    // vv
-    @IBAction func goNextBySegue(_ sender:UIButton) {
-        performSegue(withIdentifier: "nextSegue", sender: nil)
-    }
     override func viewDidLoad() {
         super.viewDidLoad()
         label.text = getNowClockString()
@@ -46,6 +41,6 @@ class ViewController: UIViewController {
     
     
     
-
+    
 }
 
