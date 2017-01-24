@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     @IBAction func goNext(_ sender:UIButton) {
         performSegue(withIdentifier: "nextView", sender: nil)
         
+        
     }
     
     override func viewDidLoad() {
