@@ -11,13 +11,6 @@ import UIKit
 class ViewController: UIViewController {
     @IBOutlet var label: UILabel!
     
-    // 画面遷移
-    @IBAction func goNext(_ sender:UIButton) {
-        performSegue(withIdentifier: "nextView", sender: nil)
-        
-        
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         label.text = getNowClockString()
@@ -27,12 +20,19 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
+    // 画面遷移
+    @IBAction func goNext(_ sender:UIButton) {
+        performSegue(withIdentifier: "nextView", sender: nil)
+        
+    }
+    
     func getNowClockString() -> String {
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy-MM-dd' 'HH:mm:ss"
         let now = Date()
         return formatter.string(from: now)
     }
+    
     
     
     

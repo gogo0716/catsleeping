@@ -8,57 +8,46 @@
 
 import UIKit
 
-class Alarm {
-    var title: String?
-    var time: Date?
-    var duration: Int?
-    var musicURL: String?
-    var vibration: Bool?
-}
-func initalAlarm() -> Alarm {
-    return  Alarm()
-}
-
 
 class NextViewController: UIViewController {
     
-    var alarm: Alarm = initalAlarm()
+    private var myTextField: UITextField!
     
-    
-    
-    
-    @IBAction func titleText(_ sender: UITextView) {
-        if let text2 = sender.text {
-            if let title = String(text2){
-                alarm.title = title
-            }
-            dump(alarm)
-        }
-        
-    }
-    @IBAction func onOFFSwitch(_ sender: UISwitch){
-        let buttonState: Bool = sender.isOn
-        if sender.isOn{
-            let vibrationState = Bool(true)
-            alarm.vibration = vibrationState
-            dump(alarm)
-        }else{
-            let vibrationState = Bool(false)
-            alarm.vibration = vibrationState
-            dump(alarm)
-        }
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = UIColor.white
+        let myDatePicker: UIDatePicker = UIDatePicker()
+        myDatePicker.frame = CGRect(x:0, y:50, width:self.view.frame.width, height:200)
+        myDatePicker.timeZone = NSTimeZone.local
+        myDatePicker.backgroundColor = UIColor.white
+        myDatePicker.layer.cornerRadius = 5.0
+        myDatePicker.layer.shadowOpacity = 0.5
+
+        myDatePicker.addTarget(self, action: #selector(NextViewController.onDidChangeDate(sender:)), for: .valueChanged)
+        
+    }
+    internal func onDidChangeDate(sender: UIDatePicker){
+        let myDateFormatter: DateFormatter = DateFormatter()
+        myDateFormatter.dateFormat = "yyyy/MM/dd hh:mm"
+        
+        let mySelectedDate: NSString = myDateFormatter.string(from: sender.date) as NSString
+        myTextField.text = mySelectedDate as String
+    
         
         
     }
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         
     }
+    
+    
+
+    }
+    
     
     
     /*
@@ -71,4 +60,3 @@ class NextViewController: UIViewController {
      }
      */
     
-}
