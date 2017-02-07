@@ -16,6 +16,7 @@
 		AA5416211DED9DC000ABE698 /* __UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5416201DED9DC000ABE698 /* __UITests.swift */; };
 		AA5C44D11E409BE7000BE8E5 /* Alarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5C44D01E409BE7000BE8E5 /* Alarm.swift */; };
 		AAD125121E2E396F007C6BD9 /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD125111E2E396F007C6BD9 /* NextViewController.swift */; };
+		AAEB668A1E49E006002859EB /* SensorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEB66891E49E006002859EB /* SensorViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		AA5416221DED9DC000ABE698 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA5C44D01E409BE7000BE8E5 /* Alarm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alarm.swift; sourceTree = "<group>"; };
 		AAD125111E2E396F007C6BD9 /* NextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
+		AAEB66891E49E006002859EB /* SensorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				AA5416001DED9DC000ABE698 /* AppDelegate.swift */,
 				AA5416021DED9DC000ABE698 /* ViewController.swift */,
 				AA5416041DED9DC000ABE698 /* Main.storyboard */,
+				AAEB66891E49E006002859EB /* SensorViewController.swift */,
 				AAD125111E2E396F007C6BD9 /* NextViewController.swift */,
 				AA5C44D01E409BE7000BE8E5 /* Alarm.swift */,
 				AA5416071DED9DC000ABE698 /* Assets.xcassets */,
@@ -268,6 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAEB668A1E49E006002859EB /* SensorViewController.swift in Sources */,
 				AA5416031DED9DC000ABE698 /* ViewController.swift in Sources */,
 				AAD125121E2E396F007C6BD9 /* NextViewController.swift in Sources */,
 				AA5416011DED9DC000ABE698 /* AppDelegate.swift in Sources */,
@@ -364,7 +368,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -404,7 +408,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -416,9 +420,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = CJPA6M3LJM;
 				INFOPLIST_FILE = "子猫/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.litech.--";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.litech.---";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -428,9 +434,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = CJPA6M3LJM;
 				INFOPLIST_FILE = "子猫/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.litech.--";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.litech.---";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
