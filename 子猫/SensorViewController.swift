@@ -15,7 +15,6 @@ class SensorViewController: UIViewController {
     
     
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         //近接センサーを有効にする
@@ -42,6 +41,7 @@ class SensorViewController: UIViewController {
             //離れた時
         }
     }
+    
     
     
     
