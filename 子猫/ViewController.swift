@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     @IBOutlet var label: UILabel!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         label.text = getNowClockString()
@@ -19,6 +20,10 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+    
+    // viewが表示される前に毎回呼ばれるメソッド
+    
+    // keyから表示
     
     // 画面遷移
     @IBAction func goNext(_ sender:UIButton) {

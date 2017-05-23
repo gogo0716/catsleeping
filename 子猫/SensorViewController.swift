@@ -15,6 +15,16 @@ class SensorViewController: UIViewController {
     
     
     
+    // viewが呼ばれる直前に呼ばれるメソッド
+    override func viewWillAppear(_ animated: Bool) {
+        // userdefaultにデータを文字列で格納
+        let userDeaults = UserDefaults.standard
+        ud.setValue(String()
+        
+    }
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         //近接センサーを有効にする
@@ -22,15 +32,15 @@ class SensorViewController: UIViewController {
         
         //近接センサーの通知設定
         NotificationCenter.default.addObserver(
-                self,
-                selector: #selector(self.proximitySensorStateDidChange(notification:)),
-                name: NSNotification.Name(rawValue: "UIDeviceProximityStateDidChangeNotification"),
-                object: nil
+            self,
+            selector: #selector(self.proximitySensorStateDidChange(notification:)),
+            name: NSNotification.Name(rawValue: "UIDeviceProximityStateDidChangeNotification"),
+            object: nil
         )
         //近接センサーを通知する
         NotificationCenter.default.post(
-                name: NSNotification.Name(rawValue: "UIDeviceProximityStateDidChangeNotification"),
-                object: nil
+            name: NSNotification.Name(rawValue: "UIDeviceProximityStateDidChangeNotification"),
+            object: nil
         )
     }
     
@@ -40,6 +50,14 @@ class SensorViewController: UIViewController {
         }else{
             //離れた時
         }
+        
+        
+    }
+    
+    func stopsleep() {
+        let awakeTime = Date()
+        let span = awakeTime.timeIntervalSince()
+        print("")
     }
     
     

@@ -202,7 +202,6 @@
 				TargetAttributes = {
 					AA5415FC1DED9DC000ABE698 = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = CJPA6M3LJM;
 						LastSwiftMigration = 0820;
 					};
 					AA5416101DED9DC000ABE698 = {
@@ -420,11 +419,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = CJPA6M3LJM;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "子猫/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.litech.---";
+				PRODUCT_BUNDLE_IDENTIFIER = com.goji.catsleep;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -434,11 +433,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = CJPA6M3LJM;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "子猫/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.litech.---";
+				PRODUCT_BUNDLE_IDENTIFIER = com.goji.catsleep;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
