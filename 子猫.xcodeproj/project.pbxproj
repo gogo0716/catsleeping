@@ -105,9 +105,9 @@
 			children = (
 				AA5416001DED9DC000ABE698 /* AppDelegate.swift */,
 				AA5416021DED9DC000ABE698 /* ViewController.swift */,
-				AA5416041DED9DC000ABE698 /* Main.storyboard */,
-				AAEB66891E49E006002859EB /* SensorViewController.swift */,
 				AAD125111E2E396F007C6BD9 /* NextViewController.swift */,
+				AAEB66891E49E006002859EB /* SensorViewController.swift */,
+				AA5416041DED9DC000ABE698 /* Main.storyboard */,
 				AA5C44D01E409BE7000BE8E5 /* Alarm.swift */,
 				AA5416071DED9DC000ABE698 /* Assets.xcassets */,
 				AA5416091DED9DC000ABE698 /* LaunchScreen.storyboard */,

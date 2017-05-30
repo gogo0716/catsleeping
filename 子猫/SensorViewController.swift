@@ -5,6 +5,7 @@
 //  Created by 川口剛司 on H29/02/07.
 //  Copyright © 平成29年 川口剛司. All rights reserved.
 //
+// 
 
 import UIKit
 
@@ -12,14 +13,16 @@ class SensorViewController: UIViewController {
     //UIDeviceクラスを呼ぶ
     let myDevice: UIDevice = UIDevice.current
     private var myTextField: UITextField!
-    
+    var testText:String = "12"
+    var sleepDate: Date = Date()
+    var totalsleeptime: TimeInterval = 0.0
     
     
     // viewが呼ばれる直前に呼ばれるメソッド
     override func viewWillAppear(_ animated: Bool) {
         // userdefaultにデータを文字列で格納
         let userDeaults = UserDefaults.standard
-        ud.setValue(String()
+        userDeaults.set("12", forKey: "time")
         
     }
     
@@ -47,7 +50,9 @@ class SensorViewController: UIViewController {
     func proximitySensorStateDidChange(notification: NSNotification){
         if myDevice.proximityState == true {
             //近づいた時
+         sleepDate = Date()
         }else{
+            
             //離れた時
         }
         
@@ -56,8 +61,12 @@ class SensorViewController: UIViewController {
     
     func stopsleep() {
         let awakeTime = Date()
-        let span = awakeTime.timeIntervalSince()
-        print("")
+        let span = awakeTime.timeIntervalSince(sleepDate)
+        print("\(span)秒寝た")
+        totalsleeptime += span
+        .text  = "トータル睡眠時間\(totalsleeptime)秒"
+        
+        
     }
     
     
