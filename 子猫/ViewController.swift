@@ -16,6 +16,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         label.text = getNowClockString()
+        label.text = 
+        
     }
     
     override func didReceiveMemoryWarning() {
