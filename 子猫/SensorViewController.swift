@@ -10,6 +10,7 @@
 import UIKit
 
 class SensorViewController: UIViewController {
+    @IBOutlet var label: UILabel!
     //UIDeviceクラスを呼ぶ
     let myDevice: UIDevice = UIDevice.current
     private var myTextField: UITextField!
@@ -17,17 +18,8 @@ class SensorViewController: UIViewController {
     var sleepDate: Date = Date()
     var totalsleeptime: TimeInterval = 0.0
     
-    let userDeaults = UserDefaults.standard
-    
+    let ud = UserDefaults.standard
     // viewが呼ばれる直前に呼ばれるメソッド
-    override func viewWillAppear(_ animated: Bool) {
-        // userdefaultにデータを文字列で格納
-        
-        userDeaults.set("12", forKey: "time")
-        
-    }
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,6 +40,13 @@ class SensorViewController: UIViewController {
         )
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        // userdefaultにデータを文字列で格納
+        
+        ud.set("12", forKey: "time")
+        
+    }
+    
     func proximitySensorStateDidChange(notification: NSNotification){
         if myDevice.proximityState == true {
             //近づいた時
@@ -59,18 +58,18 @@ class SensorViewController: UIViewController {
         
         
     }
-    
+    //寝た合計を保存
     func stopsleep() {
         let awakeTime = Date()
         let span = awakeTime.timeIntervalSince(sleepDate)
         print("\(span)秒寝た")
         totalsleeptime += span
-        userDeaults.set(totalsleeptime, forKey:"sleep")
-        userDeaults.string(forKey: "sleep")
-        
+        ud.set(totalsleeptime, forKey:"sleep")
+        //        UserDefaults.standard.string(forKey: "sleep")
     }
     
-    
+    @IBAction func goBack(_ segue:UIStoryboardSegue) {
+        self.presentingViewController?.presentingViewController?.dismiss(animated: true, completion: nil)}
     
     
     

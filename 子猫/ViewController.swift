@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     @IBOutlet var label: UILabel!
     
+    let ud = UserDefaults.standard
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,8 +23,19 @@ class ViewController: UIViewController {
     }
     
     // viewが表示される前に毎回呼ばれるメソッド
+    override func viewDidAppear(_ animated: Bool) {
+        
+        // keyから表示
+        let s = ud.string(forKey: "sleep")
+        
+        print(s)
+    }
     
-    // keyから表示
+    
+    
+    
+    
+    
     
     // 画面遷移
     @IBAction func goNext(_ sender:UIButton) {
@@ -37,13 +49,6 @@ class ViewController: UIViewController {
         let now = Date()
         return formatter.string(from: now)
     }
-    
-    
-    
-    
-    
-    
-    
     
     
     
