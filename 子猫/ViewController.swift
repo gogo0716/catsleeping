@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         label.text = "sleep"
+        
     }
 
 
@@ -29,6 +30,13 @@ class ViewController: UIViewController {
         // keyから表示
         let str = ud.string(forKey: "sleep")
         label.text = str
+        let sleeptime = ud.double(forKey: "sleep")
+        label.text = String(floor(sleeptime))
+        
+        
+   
+        
+       
 
         
         print(str)
