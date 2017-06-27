@@ -15,11 +15,10 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        label.text = getNowClockString()
-        label.text = 
-        
+        label.text = ud.string(forKey: "sleep")
     }
-    
+
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
@@ -28,9 +27,9 @@ class ViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         
         // keyから表示
-        let s = ud.string(forKey: "sleep")
+        let aa = ud.string(forKey: "sleep")
         
-        print(s)
+        print(aa)
     }
     
     
