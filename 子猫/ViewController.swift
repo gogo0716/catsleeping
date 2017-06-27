@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        label.text = ud.string(forKey: "sleep")
+        label.text = "sleep"
     }
 
 
