@@ -52,13 +52,17 @@ class SensorViewController: UIViewController {
             //近づいた時
             sleepDate = Date()
         }else{
+            //寝た合計を保存
+            stopsleep()
+            
+            
             
             //離れた時
         }
         
         
+        
     }
-    //寝た合計を保存
     func stopsleep() {
         let awakeTime = Date()
         let span = awakeTime.timeIntervalSince(sleepDate)
@@ -67,6 +71,7 @@ class SensorViewController: UIViewController {
         ud.set(totalsleeptime, forKey:"sleep")
         //        UserDefaults.standard.string(forKey: "sleep")
     }
+
     
     @IBAction func goBack(_ segue:UIStoryboardSegue) {
         self.presentingViewController?.presentingViewController?.dismiss(animated: true, completion: nil)}

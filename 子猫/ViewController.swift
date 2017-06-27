@@ -27,15 +27,12 @@ class ViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         
         // keyから表示
-        let aa = ud.string(forKey: "sleep")
+        let str = ud.string(forKey: "sleep")
+        label.text = str
+
         
-        print(aa)
+        print(str)
     }
-    
-    
-    
-    
-    
     
     
     // 画面遷移
