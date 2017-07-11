@@ -47,6 +47,16 @@ class SensorViewController: UIViewController {
         
     }
     
+    
+    @IBAction func kinsetsuOn(_ sender: UIButton) {
+        sleepDate = Date()
+    }
+    
+    @IBAction func kinsetsuOff(_ sender: UIButton) {
+        stopsleep()
+    }
+    
+    
     func proximitySensorStateDidChange(notification: NSNotification){
         if myDevice.proximityState == true {
             //近づいた時
@@ -59,6 +69,7 @@ class SensorViewController: UIViewController {
             
             //離れた時
         }
+        
         
         
         

@@ -34,16 +34,17 @@ class ViewController: UIViewController {
         label.text = String(floor(sleeptime))
         
         
-   
         
-       
+   
+
 
         
         print(str)
     }
     
     
-    // 画面遷移
+    
+        // 画面遷移
     @IBAction func goNext(_ sender:UIButton) {
         performSegue(withIdentifier: "nextView", sender: nil)
         
