@@ -41,6 +41,11 @@ class ViewController: UIViewController {
         
         print(str)
     }
+    func tensuu() {
+        
+        
+    }
+    
     
     
     
