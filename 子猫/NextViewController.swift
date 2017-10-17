@@ -10,12 +10,17 @@ import UIKit
 
 
 class NextViewController: UIViewController {
+    @IBOutlet var testImageView: UIImageView!
+    
+    
     
     private var myTextField: UITextField!
     
     
     override func viewDidLoad() {
+
         super.viewDidLoad()
+        testImageView.image = UIImage(named:"haikei.jpg")
     }
     
     override func didReceiveMemoryWarning() {

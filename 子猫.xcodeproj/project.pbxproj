@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		560BFD5A1F5EA4F200AA5FCB /* haikei.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 560BFD591F5EA4F200AA5FCB /* haikei.jpg */; };
+		560BFD5C1F5EB08800AA5FCB /* 4276254i.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 560BFD5B1F5EB08800AA5FCB /* 4276254i.jpg */; };
 		AA5416011DED9DC000ABE698 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5416001DED9DC000ABE698 /* AppDelegate.swift */; };
 		AA5416031DED9DC000ABE698 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5416021DED9DC000ABE698 /* ViewController.swift */; };
 		AA5416061DED9DC000ABE698 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA5416041DED9DC000ABE698 /* Main.storyboard */; };
@@ -37,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		560BFD591F5EA4F200AA5FCB /* haikei.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = haikei.jpg; path = ../../../Downloads/haikei.jpg; sourceTree = "<group>"; };
+		560BFD5B1F5EB08800AA5FCB /* 4276254i.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 4276254i.jpg; path = ../../../Downloads/4276254i.jpg; sourceTree = "<group>"; };
 		AA5415FD1DED9DC000ABE698 /* 子猫.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "子猫.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA5416001DED9DC000ABE698 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AA5416021DED9DC000ABE698 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +107,8 @@
 		AA5415FF1DED9DC000ABE698 /* 子猫 */ = {
 			isa = PBXGroup;
 			children = (
+				560BFD5B1F5EB08800AA5FCB /* 4276254i.jpg */,
+				560BFD591F5EA4F200AA5FCB /* haikei.jpg */,
 				AA5416001DED9DC000ABE698 /* AppDelegate.swift */,
 				AA5416021DED9DC000ABE698 /* ViewController.swift */,
 				AAD125111E2E396F007C6BD9 /* NextViewController.swift */,
@@ -244,8 +250,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				560BFD5C1F5EB08800AA5FCB /* 4276254i.jpg in Resources */,
 				AA54160B1DED9DC000ABE698 /* LaunchScreen.storyboard in Resources */,
 				AA5416081DED9DC000ABE698 /* Assets.xcassets in Resources */,
+				560BFD5A1F5EA4F200AA5FCB /* haikei.jpg in Resources */,
 				AA5416061DED9DC000ABE698 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -427,7 +435,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.goji.catsleep;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -442,7 +450,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.goji.catsleep;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

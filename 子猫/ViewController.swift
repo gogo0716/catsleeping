@@ -10,14 +10,27 @@ import UIKit
 
 class ViewController: UIViewController {
     @IBOutlet var label: UILabel!
+    @IBOutlet var testImageView: UIImageView!
+    @IBOutlet var image: UIImageView!
+    @IBOutlet var formatter: UILabel!
+   
+    
+    
+    
     
     let ud = UserDefaults.standard
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        testImageView.image = UIImage(named:"haikei.jpg")
+        image.image = UIImage(named: "4276254i.jpg")
         label.text = "sleep"
         
+        
+    
     }
+    
 
 
     override func didReceiveMemoryWarning() {
@@ -35,6 +48,7 @@ class ViewController: UIViewController {
         
         
         
+        
    
 
 
@@ -45,6 +59,7 @@ class ViewController: UIViewController {
         
         
     }
+    
     
     
     
@@ -61,6 +76,20 @@ class ViewController: UIViewController {
         let now = Date()
         return formatter.string(from: now)
     }
+    func ()
+    let ssb = Date()
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     

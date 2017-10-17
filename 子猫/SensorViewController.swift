@@ -11,6 +11,7 @@ import UIKit
 
 class SensorViewController: UIViewController {
     @IBOutlet var label: UILabel!
+    @IBOutlet var testImageView: UIImageView!
     //UIDeviceクラスを呼ぶ
     let myDevice: UIDevice = UIDevice.current
     private var myTextField: UITextField!
@@ -19,9 +20,12 @@ class SensorViewController: UIViewController {
     var totalsleeptime: TimeInterval = 0.0
     
     let ud = UserDefaults.standard
+    let ssb = UserDefaults.standard
+
     // viewが呼ばれる直前に呼ばれるメソッド
     
     override func viewDidLoad() {
+        testImageView.image = UIImage(named: "haikei.jpg")
         super.viewDidLoad()
         //近接センサーを有効にする
         myDevice.isProximityMonitoringEnabled = true
@@ -42,8 +46,11 @@ class SensorViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         // userdefaultにデータを文字列で格納
-        
         ud.set("12", forKey: "time")
+        
+        
+        
+        
         
     }
     
@@ -65,8 +72,6 @@ class SensorViewController: UIViewController {
             //寝た合計を保存
             stopsleep()
             
-            
-            
             //離れた時
         }
         
@@ -85,11 +90,8 @@ class SensorViewController: UIViewController {
 
     
     @IBAction func goBack(_ segue:UIStoryboardSegue) {
-        self.presentingViewController?.presentingViewController?.dismiss(animated: true, completion: nil)}
-    
-    
-    
-    // Do any additional setup after loading the view.
+        self.presentingViewController?.presentingViewController?.dismiss(animated: true, completion: nil)
+    }
     
     
     override func didReceiveMemoryWarning() {
