@@ -13,12 +13,12 @@ class ViewController: UIViewController {
     @IBOutlet var testImageView: UIImageView!
     @IBOutlet var image: UIImageView!
     @IBOutlet var formatter: UILabel!
-   
+    @IBOutlet var scoreboard: UILabel!
     
-    
-    
-    
+  
     let ud = UserDefaults.standard
+    
+   
     
     
     override func viewDidLoad() {
@@ -55,10 +55,12 @@ class ViewController: UIViewController {
         
         print(str)
     }
-    func tensuu() {
-        
-        
-    }
+    
+    
+    
+    
+    
+   
     
     
     
@@ -76,8 +78,21 @@ class ViewController: UIViewController {
         let now = Date()
         return formatter.string(from: now)
     }
-    func ()
-    let ssb = Date()
+    override func viewDidDisappear(_ animated: Bool) {
+        let scoreboard = ud.string(forKey: "time")
+        label.text = scoreboard
+        
+    
+        
+        
+        
+    }
+    
+    
+    
+    
+    
+  
     
     
     
