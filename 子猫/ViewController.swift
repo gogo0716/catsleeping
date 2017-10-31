@@ -15,10 +15,10 @@ class ViewController: UIViewController {
     @IBOutlet var formatter: UILabel!
     @IBOutlet var scoreboard: UILabel!
     
-  
+    
     let ud = UserDefaults.standard
     
-   
+    
     
     
     override func viewDidLoad() {
@@ -28,11 +28,11 @@ class ViewController: UIViewController {
         label.text = "sleep"
         
         
-    
+        
     }
     
-
-
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
@@ -41,32 +41,22 @@ class ViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         
         // keyから表示
-        let str = ud.string(forKey: "sleep")
+        let str = ud.string(forKey: "time")
         label.text = str
-        let sleeptime = ud.double(forKey: "sleep")
+        let sleeptime = ud.double(forKey: "time")
         label.text = String(floor(sleeptime))
         
         
         
         
-   
-
-
+        
+        
+        
         
         print(str)
     }
     
-    
-    
-    
-    
-   
-    
-    
-    
-    
-    
-        // 画面遷移
+    // 画面遷移
     @IBAction func goNext(_ sender:UIButton) {
         performSegue(withIdentifier: "nextView", sender: nil)
         
@@ -79,10 +69,11 @@ class ViewController: UIViewController {
         return formatter.string(from: now)
     }
     override func viewDidDisappear(_ animated: Bool) {
-        let scoreboard = ud.string(forKey: "time")
+        let scoreboard = ud.string( forKey: "sleep")
         label.text = scoreboard
         
-    
+        
+        
         
         
         
@@ -92,7 +83,7 @@ class ViewController: UIViewController {
     
     
     
-  
+    
     
     
     
