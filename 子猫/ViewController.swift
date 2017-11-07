@@ -16,6 +16,10 @@ class ViewController: UIViewController {
     @IBOutlet var scoreboard: UILabel!
     
     
+ 
+    
+    
+    
     let ud = UserDefaults.standard
     
     
@@ -77,6 +81,9 @@ class ViewController: UIViewController {
         
         
         
+    }
+    @IBAction func GoNext(_ sender:UIButton) {
+        performSegue(withIdentifier: "score", sender: nil)
     }
     
     

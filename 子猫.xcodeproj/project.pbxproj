@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		560BFD5A1F5EA4F200AA5FCB /* haikei.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 560BFD591F5EA4F200AA5FCB /* haikei.jpg */; };
 		560BFD5C1F5EB08800AA5FCB /* 4276254i.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 560BFD5B1F5EB08800AA5FCB /* 4276254i.jpg */; };
+		563CFEDC1FB1BDF1004338FE /* scoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563CFEDB1FB1BDF1004338FE /* scoreViewController.swift */; };
 		AA5416011DED9DC000ABE698 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5416001DED9DC000ABE698 /* AppDelegate.swift */; };
 		AA5416031DED9DC000ABE698 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5416021DED9DC000ABE698 /* ViewController.swift */; };
 		AA5416061DED9DC000ABE698 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA5416041DED9DC000ABE698 /* Main.storyboard */; };
@@ -41,6 +42,7 @@
 /* Begin PBXFileReference section */
 		560BFD591F5EA4F200AA5FCB /* haikei.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = haikei.jpg; path = ../../../Downloads/haikei.jpg; sourceTree = "<group>"; };
 		560BFD5B1F5EB08800AA5FCB /* 4276254i.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 4276254i.jpg; path = ../../../Downloads/4276254i.jpg; sourceTree = "<group>"; };
+		563CFEDB1FB1BDF1004338FE /* scoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scoreViewController.swift; sourceTree = "<group>"; };
 		AA5415FD1DED9DC000ABE698 /* 子猫.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "子猫.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA5416001DED9DC000ABE698 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AA5416021DED9DC000ABE698 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				560BFD591F5EA4F200AA5FCB /* haikei.jpg */,
 				AA5416001DED9DC000ABE698 /* AppDelegate.swift */,
 				AA5416021DED9DC000ABE698 /* ViewController.swift */,
+				563CFEDB1FB1BDF1004338FE /* scoreViewController.swift */,
 				AAD125111E2E396F007C6BD9 /* NextViewController.swift */,
 				AAEB66891E49E006002859EB /* SensorViewController.swift */,
 				AA5416041DED9DC000ABE698 /* Main.storyboard */,
@@ -280,6 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AAEB668A1E49E006002859EB /* SensorViewController.swift in Sources */,
+				563CFEDC1FB1BDF1004338FE /* scoreViewController.swift in Sources */,
 				AA5416031DED9DC000ABE698 /* ViewController.swift in Sources */,
 				AAD125121E2E396F007C6BD9 /* NextViewController.swift in Sources */,
 				AA5416011DED9DC000ABE698 /* AppDelegate.swift in Sources */,
