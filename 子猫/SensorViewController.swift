@@ -21,7 +21,7 @@ class SensorViewController: UIViewController {
     
     let ud = UserDefaults.standard
     let ssb = UserDefaults.standard
-
+    
     // viewが呼ばれる直前に呼ばれるメソッド
     
     override func viewDidLoad() {
@@ -87,7 +87,7 @@ class SensorViewController: UIViewController {
         ud.set(totalsleeptime, forKey:"sleep")
         //        UserDefaults.standard.string(forKey: "sleep")
     }
-
+    
     
     @IBAction func goBack(_ segue:UIStoryboardSegue) {
         self.presentingViewController?.presentingViewController?.dismiss(animated: true, completion: nil)
