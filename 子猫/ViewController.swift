@@ -81,9 +81,12 @@ class ViewController: UIViewController {
         
         
         
+        
     }
-    @IBAction func GoNext(_ sender:UIButton) {
-        performSegue(withIdentifier: "score", sender: nil)
+   
+    @IBAction func  scoreboard(_ sender:UIButton) {
+        let next = storyboard!.instantiateViewController(withIdentifier: "nextView")
+        self.present(next,animated: true, completion: nil)
     }
     
     

@@ -12,6 +12,8 @@ class scoreViewController: UIViewController, UITableViewDataSource {
     
     @IBOutlet var table: UITableView!
     
+    let userDefaults = UserDefaults.standard
+    
     
     
     override func viewDidLoad() {
@@ -20,6 +22,14 @@ class scoreViewController: UIViewController, UITableViewDataSource {
         table.dataSource = self
         
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        userDefaults.set("01", forKey: "time")
+        userDefaults.array(forKey: "time")
+        
+        
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -34,6 +44,15 @@ class scoreViewController: UIViewController, UITableViewDataSource {
         cell?.textLabel?.text = "メモ"
         return cell!
     }
+    @IBAction func score(){
+        userDefaults.bool(forKey: "sleep")
+        
+        
+        
+        
+    }
+    
+    
     
     
     

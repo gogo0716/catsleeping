@@ -27,6 +27,9 @@ class NextViewController: UIViewController {
         super.didReceiveMemoryWarning()
         
     }
+    @IBAction func goNext(_ sender:UIButton) {
+        let next = storyboard!.instantiateViewController(withIdentifier: "nextView")
+        self.present(next,animated: true, completion: nil)
     
     
     
@@ -44,4 +47,5 @@ class NextViewController: UIViewController {
      }
      */
     
+}
 }
