@@ -98,8 +98,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="手動で設定"/>
                                 <connections>
-                                    <action selector="goNext:" destination="N97-um-ErR" eventType="touchUpInside" id="QBU-UG-PnH"/>
-                                    <segue destination="wQw-m5-Zdu" kind="push" id="Xh7-tF-hsy"/>
+                                    <segue destination="wQw-m5-Zdu" kind="modal" identifier="nextView" id="l89-tq-z1p"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LFx-wl-CFT">
@@ -219,7 +218,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qfa-6B-Ct3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-11" y="474"/>
+            <point key="canvasLocation" x="545.5" y="1231.5"/>
         </scene>
     </scenes>
     <resources>

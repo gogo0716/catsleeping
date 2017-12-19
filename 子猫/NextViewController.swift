@@ -13,6 +13,16 @@ class NextViewController: UIViewController {
     @IBOutlet var testImageView: UIImageView!
     
     
+    @IBAction func goNext(_ sender:UIButton) {
+        let next = storyboard!.instantiateViewController(withIdentifier: "nextView")
+        
+    }
+    //セグエイ用の画面遷移追加
+    @IBAction func goNextBySegue(_ sender:UIButton) {
+        performSegue(withIdentifier: "nextSegue", sender: nil)
+    }
+    
+    
     
     private var myTextField: UITextField!
     
@@ -27,9 +37,6 @@ class NextViewController: UIViewController {
         super.didReceiveMemoryWarning()
         
     }
-    @IBAction func goNext(_ sender:UIButton) {
-        let next = storyboard!.instantiateViewController(withIdentifier: "nextView")
-        self.present(next,animated: true, completion: nil)
     
     
     
@@ -48,4 +55,4 @@ class NextViewController: UIViewController {
      */
     
 }
-}
+

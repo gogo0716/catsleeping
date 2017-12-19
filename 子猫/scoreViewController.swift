@@ -9,6 +9,8 @@
 import UIKit
 
 class scoreViewController: UIViewController, UITableViewDataSource {
+    @IBAction func goBack(_ segue:UIStoryboardSegue) {}
+
     
     @IBOutlet var table: UITableView!
     
@@ -19,7 +21,7 @@ class scoreViewController: UIViewController, UITableViewDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        table.dataSource = self
+        
         
         // Do any additional setup after loading the view.
     }
@@ -46,11 +48,10 @@ class scoreViewController: UIViewController, UITableViewDataSource {
     }
     @IBAction func score(){
         userDefaults.bool(forKey: "sleep")
-        
-        
-        
-        
+   
     }
+    
+    
     
     
     
