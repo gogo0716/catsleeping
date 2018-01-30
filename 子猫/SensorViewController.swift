@@ -17,10 +17,9 @@ class SensorViewController: UIViewController {
     private var myTextField: UITextField!
     var testText:String = "12"
     var sleepDate: Date = Date()
-    var totalsleeptime: TimeInterval = 0.0
+    var totalsleeptime: TimeInterval = 0
     
     let ud = UserDefaults.standard
-    let ssb = UserDefaults.standard
     
     // viewが呼ばれる直前に呼ばれるメソッド
     
@@ -47,11 +46,8 @@ class SensorViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         // userdefaultにデータを文字列で格納
         ud.set("12", forKey: "time")
-        
-        
-        
-        
-        
+        totalsleeptime = ud.double(forKey: "sleep")
+
     }
     
     
@@ -85,6 +81,9 @@ class SensorViewController: UIViewController {
         print("\(span)秒寝た")
         totalsleeptime += span
         ud.set(totalsleeptime, forKey:"sleep")
+        
+        
+        
         //        UserDefaults.standard.string(forKey: "sleep")
     }
     
@@ -98,6 +97,9 @@ class SensorViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+   
+
     
     
     /*

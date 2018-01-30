@@ -45,9 +45,9 @@ class ViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         
         // keyから表示
-        let str = ud.string(forKey: "time")
+        let str = ud.string(forKey: "sleep")
         label.text = str
-        let sleeptime = ud.double(forKey: "time")
+        let sleeptime = ud.double(forKey: "sleep")
         label.text = String(floor(sleeptime))
         
         
@@ -72,16 +72,10 @@ class ViewController: UIViewController {
         let now = Date()
         return formatter.string(from: now)
     }
-    override func viewDidDisappear(_ animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         let scoreboard = ud.string( forKey: "sleep")
         label.text = scoreboard
-        
-        
-        
-        
-        
-        
-        
+    
     }
    
     @IBAction func  scoreboard(_ sender:UIButton) {
