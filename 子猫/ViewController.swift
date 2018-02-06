@@ -15,12 +15,9 @@ class ViewController: UIViewController {
     @IBOutlet var formatter: UILabel!
     @IBOutlet var scoreboard: UILabel!
     
-    
- 
-    
-    
-    
+
     let ud = UserDefaults.standard
+    
     
     
     
@@ -49,14 +46,6 @@ class ViewController: UIViewController {
         label.text = str
         let sleeptime = ud.double(forKey: "sleep")
         label.text = String(floor(sleeptime))
-        
-        
-        
-        
-        
-        
-        
-        
         print(str)
     }
     

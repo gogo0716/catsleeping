@@ -8,18 +8,27 @@
 
 import UIKit
 
-class scoreViewController: UIViewController, UITableViewDataSource {
+class scoreViewController: UIViewController, UITableViewDataSource,UITableViewDelegate {
     @IBAction func goBack(_ segue:UIStoryboardSegue) {}
 
     
     @IBOutlet var table: UITableView!
+    var score = [String]()
+    
     
     let userDefaults = UserDefaults.standard
+
+    
     
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        table.dataSource = self
+        
+      
+       
+        
         
         
         
@@ -46,10 +55,12 @@ class scoreViewController: UIViewController, UITableViewDataSource {
         cell?.textLabel?.text = "メモ"
         return cell!
     }
-    @IBAction func score(){
+    @IBAction func score1(){
         userDefaults.bool(forKey: "sleep")
    
     }
+    
+    
     
 }
 
