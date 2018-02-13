@@ -18,6 +18,7 @@ class SensorViewController: UIViewController {
     var testText:String = "12"
     var sleepDate: Date = Date()
     var totalsleeptime: TimeInterval = 0
+    var sleepdate: [TimeInterval] = []
     
     let ud = UserDefaults.standard
     
@@ -79,8 +80,12 @@ class SensorViewController: UIViewController {
         let awakeTime = Date()
         let span = awakeTime.timeIntervalSince(sleepDate)
         print("\(span)秒寝た")
-        totalsleeptime += span
+        totalsleeptime += span // spanは次に足す奴
         ud.set(totalsleeptime, forKey:"sleep")
+        
+        
+        // sleepdateにspanを要素として追加する
+        
         
         
         

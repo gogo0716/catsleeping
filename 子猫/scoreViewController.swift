@@ -13,10 +13,15 @@ class scoreViewController: UIViewController, UITableViewDataSource,UITableViewDe
 
     
     @IBOutlet var table: UITableView!
-    var score = [String]()
+    var sleepscore: Date = Date()
+    var scoretime: [TimeInterval] = []
+
+    
+    
     
     
     let userDefaults = UserDefaults.standard
+    
 
     
     
@@ -25,6 +30,9 @@ class scoreViewController: UIViewController, UITableViewDataSource,UITableViewDe
     override func viewDidLoad() {
         super.viewDidLoad()
         table.dataSource = self
+        
+        
+        
         
       
        
@@ -36,8 +44,7 @@ class scoreViewController: UIViewController, UITableViewDataSource,UITableViewDe
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        userDefaults.set("01", forKey: "time")
-        userDefaults.array(forKey: "time")
+       
         
         
         

@@ -15,6 +15,8 @@ class ViewController: UIViewController {
     @IBOutlet var formatter: UILabel!
     @IBOutlet var scoreboard: UILabel!
     
+    var score: [TimeInterval] = []
+    
 
     let ud = UserDefaults.standard
     
@@ -27,6 +29,9 @@ class ViewController: UIViewController {
         testImageView.image = UIImage(named:"haikei.jpg")
         image.image = UIImage(named: "4276254i.jpg")
         label.text = "sleep"
+        ud.set(score, forKey: "s")
+        
+        
         
         
         
@@ -70,6 +75,10 @@ class ViewController: UIViewController {
     @IBAction func  scoreboard(_ sender:UIButton) {
         let next = storyboard!.instantiateViewController(withIdentifier: "nextView")
         self.present(next,animated: true, completion: nil)
+    }
+    func totalscore() {
+        
+        
     }
     
     
