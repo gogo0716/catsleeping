@@ -15,9 +15,8 @@ class ViewController: UIViewController {
     @IBOutlet var formatter: UILabel!
     @IBOutlet var scoreboard: UILabel!
     
-    var score: [TimeInterval] = []
-    
 
+    
     let ud = UserDefaults.standard
     
     
@@ -52,6 +51,13 @@ class ViewController: UIViewController {
         let sleeptime = ud.double(forKey: "sleep")
         label.text = String(floor(sleeptime))
         print(str)
+     
+        
+        
+        
+    
+       
+        
     }
     
     // 画面遷移
@@ -80,6 +86,7 @@ class ViewController: UIViewController {
         
         
     }
+    
     
     
     

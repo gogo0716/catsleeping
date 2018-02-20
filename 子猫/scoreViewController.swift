@@ -44,6 +44,8 @@ class scoreViewController: UIViewController, UITableViewDataSource,UITableViewDe
     }
     
     override func viewDidAppear(_ animated: Bool) {
+        scoretime = ud.array(forKey: "a") as! [TimeInterval]
+        scoretime += []
        
         
         

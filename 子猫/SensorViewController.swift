@@ -19,6 +19,13 @@ class SensorViewController: UIViewController {
     var sleepDate: Date = Date()
     var totalsleeptime: TimeInterval = 0
     var sleepdate: [TimeInterval] = []
+
+    
+  
+    
+    
+    
+    
     
     let ud = UserDefaults.standard
     
@@ -84,10 +91,10 @@ class SensorViewController: UIViewController {
         ud.set(totalsleeptime, forKey:"sleep")
         
         
+        
         // sleepdateにspanを要素として追加する
-        
-        
-        
+        sleepdate += [span]
+        ud.set(sleepdate, forKey: "a")
         
         //        UserDefaults.standard.string(forKey: "sleep")
     }
